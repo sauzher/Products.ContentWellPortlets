@@ -7,9 +7,7 @@
 
 <head>
 <metal:javascript fill-slot="javascript_head_slot">
-  <script type="text/javascript"
-      tal:attributes="src string:${context/absolute_url}/++resource++manage-portlets.js">
-  </script>
+
 </metal:javascript>
 </head>
 

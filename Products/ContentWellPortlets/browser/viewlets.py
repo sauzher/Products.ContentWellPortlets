@@ -53,7 +53,7 @@ class ContentWellPortletsViewlet(ViewletBase):
 
     def showPortlets(self):
         return not self.dont_show\
-            and '@@manage-portlets' not in self.request.get('URL')
+            and 'manage-portlets' not in self.request.get('URL')
 
     def portletManagers(self):
         managers = []
@@ -145,7 +145,7 @@ class PortletsAboveViewlet(ContentWellPortletsViewlet):
             'manage_portlets_above_link',
             default=u'Add, edit or remove a portlet above the content')
 
-
+from plone.app.portlets import browser
 class PortletsBelowViewlet(ContentWellPortletsViewlet):
     name = 'BelowPortletManager'
     manage_view = '@@manage-portletsbelowcontent'

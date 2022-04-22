@@ -12,6 +12,13 @@
       layer=".interfaces.IContentWellPortlets"
       />
 
+    <plone:static
+    name="cwportlets.site"
+    type="plone"
+    directory="styles"
+    />
+
+
   <!-- portlet renderer -->
   <adapter
       factory="Products.ContentWellPortlets.browser.manager.ContentWellPortletRenderer"
