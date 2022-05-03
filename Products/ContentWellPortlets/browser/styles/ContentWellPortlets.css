@@ -24,6 +24,11 @@
     margin-top: 0.5rem;
 }
 
+.contentwellportlets.row > div{
+    min-height: 0;
+    min-width: 0;
+    }
+
 .contentwellportlets.row{
     display: flex;
     flex-direction: row;
@@ -31,10 +36,11 @@
     justify-content: space-between;
     align-items: normal;
     align-content: normal; 
-    margin: auto 0;
+    /* margin: auto 0; */
     --gap: 0.2em;
     margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
     width: calc(100% + var(--gap));
+    
 }
 
 .contentwellportlets.row div{
